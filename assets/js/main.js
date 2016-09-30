@@ -354,7 +354,8 @@ var $ = jQuery.noConflict();
       submitHandler: function(form) {
         $(form).ajaxSubmit({
           type: 'POST',
-          url: 'assets/php/contact.php',
+          //url: 'assets/php/contact.php',
+          url: 'https://formspree.io/xyylawqx',
           dataType: 'json',
           cache: false,
           data: $form.serialize(),
