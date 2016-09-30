@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Smart@Tree</title>
+    <link>http://www.smart-tree.ch/</link>
+    <description>Julien De Siebenthal</description>
+    <pubDate>Sun, 26 Jul 2015 14:48:12 CEST</pubDate>
+    <lastBuildDate>Sun, 26 Jul 2015 14:48:12 CEST</lastBuildDate>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>Org-page static site generator (https://github.com/kelvinh/org-page)</generator>
+    <item>
+      <title>Introducing scala and sbt</title>
+      <link>http://www.smart-tree.ch/blog/2015/07/05/scala-and-sbt</link>
+      <description>configure scala and sbt</description>
+      <pubDate>2015-07-05</pubDate>
+      <guid>http://www.smart-tree.ch/blog/2015/07/05/scala-and-sbt</guid>
+    </item>
+    <item>
+      <title>Keep doing a static website simple</title>
+      <link>http://www.smart-tree.ch/blog/2015/06/21/keep-doing-a-static-website-simple</link>
+      <description>Describe my experience with org-page</description>
+      <pubDate>2015-06-21</pubDate>
+      <guid>http://www.smart-tree.ch/blog/2015/06/21/keep-doing-a-static-website-simple</guid>
+    </item>
+  </channel>
+</rss>

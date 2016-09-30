@@ -1,0 +1,10 @@
+#+TITLE:       Keep doing a static website simple
+#+AUTHOR:      Julien De Siebenthal
+#+EMAIL:       jsiebenthal@smart-tree.ch
+#+DATE:        2015-06-21 Sun
+#+URI:         /blog/%y/%m/%d/keep-doing-a-static-website-simple
+#+KEYWORDS:    Org-page, Emacs, Lisp, Html, Website
+#+TAGS:        Html, Emacs, Lisp, Org
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: Describe my experience with org-page

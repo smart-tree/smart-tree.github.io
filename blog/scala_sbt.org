@@ -1,0 +1,60 @@
+#+TITLE:       Scala and sbt
+#+AUTHOR:      Julien De Siebenthal
+#+EMAIL:       jsiebenthal@smart-tree.ch
+#+DATE:        2015-07-05 Sun
+#+URI:         /blog/%y/%m/%d/scala-and-sbt
+#+KEYWORDS:    scala, sbt, configuration
+#+TAGS:        Scala, SBT
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: configure scala and sbt
+
+Using scala and sbt is somehow tricky at the beginning. I just sum up my experience with it compacting the different steps to make it run.
+I will describe the setup for MacOSX.
+* Prerequisites : Emacs, sbt, scala
+* in a terminal :
+ >> brew install emacs
+ >> brew install sbt
+ >> brew install scala
+* configure emacs
+** used Emacs plugins
+after installing that, you must get the following Emacs packages \
+  scala-mode2 \
+  ensime \
+  magit
+** configure them
+create in .emacs.d an init.el file where you add
+#+BEGIN_SRC emacs-lisp  
+;; setup Scala
+(require 'scala-mode2)
+
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
+:: setup Magit (could be required)
+setq magit-last-seen-setup-instructions "1.4.0")
+#+END_SRC
+** after that you should be ready to create a Scala project
+*** prepare the project directory tree
+Basically you must follow a Maven directory structure
+bash >> mkdir -p projectsample/project
+bash >> mkdir -p projectsample/src/{test,main}/scala
+*** write a simple Main.scala in the src/main/scala folder
+#+BEGIN_SRC scala
+ package com.projectsample
+
+ object Main  {
+  def main (args : Array[String]) = {
+    println("Scalala")
+    }
+ 
+  }
+#+END_SRC 
+*** run sbt under the root of the project
+bash >> sbt
+then in the sbt shell type the command gen-ensime that will generate the configuration
+sbt >> gen-ensime
+once done open the Main.scala in emacs 
+*** activate ensime from Emacs do Meta-x (Esc-x) and type
+Emacs minibuffer >> ensime
+And that's all!

@@ -1,0 +1,10 @@
+#+TITLE:       Scala and sbt
+#+AUTHOR:      Julien De Siebenthal
+#+EMAIL:       jsiebenthal@smart-tree.ch
+#+DATE:        2015-07-05 Sun
+#+URI:         /blog/%y/%m/%d/scala-and-sbt
+#+KEYWORDS:    scala, sbt, configuration
+#+TAGS:        Scala, SBT
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+DESCRIPTION: configure scala and sbt
