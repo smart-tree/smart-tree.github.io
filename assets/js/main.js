@@ -366,12 +366,12 @@ var $ = jQuery.noConflict();
               $form.reset();
               $form.find('.form-label').removeClass('error');
               $form.find('button').blur();
-              $form.find('button').html("Message Sent");
+              //$form.find('button').html("Message Sent");
               $formNotify.removeClass('valid error').addClass('valid').html('<i class="fa fa-check-square"></i>' + data.message).show();
             } else {
               $form.validate().resetForm();
               $form.reset();
-              $form.find('button').html("Message Sent");
+              //$form.find('button').html("Message Sent");
               $formNotify.removeClass('valid error').addClass('error').html(data.message).show();
             }
           },
