@@ -363,13 +363,13 @@ var $ = jQuery.noConflict();
             $form.find('button').html("Send Message");
             if (data.code === 0) {
               $form.validate().resetForm();
-              $form[0].reset();
+              $form.reset();
               $form.find('.form-label').removeClass('error');
               $form.find('button').blur();
               $form.find('button').html("Message Sent");
               $formNotify.removeClass('valid error').addClass('valid').html('<i class="fa fa-check-square"></i>' + data.message).show();
             } else {
-              $form.find('button').html("Message Sent");
+              $form.find('button').html("Message Sent with Error");
               $formNotify.removeClass('valid error').addClass('error').html(data.message).show();
             }
           },
